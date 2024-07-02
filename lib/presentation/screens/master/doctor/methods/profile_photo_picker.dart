@@ -33,8 +33,7 @@ List<Widget> profilePhotoPicker({
                   ? Icon(
                       CupertinoIcons.photo,
                       size: 40,
-                      color:
-                          theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black,
+                      color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black,
                     )
                   : ClipRRect(
                       borderRadius: BorderRadius.circular(12),

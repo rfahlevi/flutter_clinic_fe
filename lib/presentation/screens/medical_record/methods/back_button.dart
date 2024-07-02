@@ -8,7 +8,7 @@ Widget backButton(BuildContext context) => SizedBox(
       child: ElevatedButton(
         onPressed: () => context.pop(),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Theme.of(context).colorScheme.background,
+          backgroundColor: Theme.of(context).colorScheme.surface,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
             side: BorderSide(

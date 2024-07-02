@@ -19,7 +19,7 @@ Widget cancelButton({
     return ElevatedButton(
       onPressed: () => confirmDeleteReservation(context, patientReservation),
       style: ElevatedButton.styleFrom(
-        backgroundColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Theme.of(context).colorScheme.surface,
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),

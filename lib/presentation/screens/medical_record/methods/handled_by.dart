@@ -27,7 +27,7 @@ List<Widget> handledBy({
         ),
         child: Text('Ditangani Oleh',
             style: ClinicTextStyle.h4SemiBold().copyWith(
-                color: theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black)),
+                color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black)),
       ),
       verticalSpace(14),
       Row(
@@ -87,7 +87,7 @@ List<Widget> handledBy({
         child: Text(
           'Identitas Pasien',
           style: ClinicTextStyle.h4SemiBold().copyWith(
-              color: theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black),
+              color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black),
         ),
       ),
       verticalSpace(14),

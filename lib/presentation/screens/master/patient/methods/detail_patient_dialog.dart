@@ -34,7 +34,7 @@ Future<dynamic> detailPatientDialog({
                 icon: Icon(
                   CupertinoIcons.arrow_up_right_square_fill,
                   size: 30,
-                  color: theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.darkBg,
+                  color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.darkBg,
                 ))
         ],
       ),

@@ -44,7 +44,7 @@ class _SelectedClinicServiceCardState extends State<SelectedClinicServiceCard> {
           Text(
             'Kategori : ${widget.clinicService.category}',
             style: ClinicTextStyle.h5Regular().copyWith(
-                color: theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.grey),
+                color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.grey),
           ),
           Text(
             widget.clinicService.name,
@@ -62,7 +62,7 @@ class _SelectedClinicServiceCardState extends State<SelectedClinicServiceCard> {
           Text(
             'Subtotal : ${rupiahFormatter(widget.clinicService.subtotal.toString())}',
             style: ClinicTextStyle.h5Medium().copyWith(
-              color: theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.warning : ClinicColor.primary,
+              color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.warning : ClinicColor.primary,
             ),
           ),
         ],

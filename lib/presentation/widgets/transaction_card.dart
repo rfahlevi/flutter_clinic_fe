@@ -83,7 +83,7 @@ class TransactionCard extends StatelessWidget {
                   Text(
                     'Total Bayar : ${rupiahFormatter(payment.totalPrice.toString())}',
                     style: ClinicTextStyle.h5SemiBold().copyWith(
-                        color: theme?.colorScheme.background == ClinicColor.darkBg
+                        color: theme?.colorScheme.surface == ClinicColor.darkBg
                             ? ClinicColor.warning
                             : ClinicColor.primary),
                     maxLines: 2,

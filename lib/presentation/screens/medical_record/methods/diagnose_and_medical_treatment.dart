@@ -27,7 +27,7 @@ List<Widget> diagnoseAndMedicalTreatment({
         child: Text(
           'Diagnosa & Penanganan',
           style: ClinicTextStyle.h4SemiBold().copyWith(
-            color: theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black,
+            color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black,
           ),
         ),
       ),

@@ -9,7 +9,7 @@ Widget backButton(BuildContext context) => SizedBox(
       child: ElevatedButton(
           onPressed: () => context.pop(),
           style: ElevatedButton.styleFrom(
-              backgroundColor: Theme.of(context).colorScheme.background, side: BorderSide(color: ClinicColor.primary)),
+              backgroundColor: Theme.of(context).colorScheme.surface, side: BorderSide(color: ClinicColor.primary)),
           child: Text(
             'Kembali',
             style: ClinicTextStyle.h4SemiBold().copyWith(

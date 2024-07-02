@@ -128,7 +128,7 @@ Future<dynamic> confirmLogoutDialog(BuildContext context) {
             ),
             TextButton(
               onPressed: () => context.pop(),
-              style: ElevatedButton.styleFrom(foregroundColor: ClinicColor.danger),
+              style: TextButton.styleFrom(foregroundColor: ClinicColor.danger),
               child: Text(
                 'Tidak',
                 style: ClinicTextStyle.h4Medium(),

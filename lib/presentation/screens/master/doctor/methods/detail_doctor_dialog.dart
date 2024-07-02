@@ -112,7 +112,7 @@ Future<dynamic> detailDoctorDialog({
               ElevatedButton(
                 onPressed: onTapDelete,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).colorScheme.background,
+                  backgroundColor: Theme.of(context).colorScheme.surface,
                   side: BorderSide(
                     color: ClinicColor.grey,
                   ),

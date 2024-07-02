@@ -35,7 +35,7 @@ List<Widget> medicalServiceOfPatient({
       child: Text(
         'Layanan Klinik',
         style: ClinicTextStyle.h4SemiBold().copyWith(
-          color: theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black,
+          color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black,
         ),
       ),
     ),
@@ -57,9 +57,8 @@ List<Widget> medicalServiceOfPatient({
                     Text(
                       'Kategori : ${medicalRecord.medicalRecordServices[index].clinicService.category}',
                       style: ClinicTextStyle.h5Regular().copyWith(
-                          color: theme?.colorScheme.background == ClinicColor.darkBg
-                              ? ClinicColor.white
-                              : ClinicColor.grey),
+                          color:
+                              theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.grey),
                     ),
                     Text(
                       medicalRecord.medicalRecordServices[index].clinicService.name,
@@ -81,7 +80,7 @@ List<Widget> medicalServiceOfPatient({
                         medicalRecord.medicalRecordServices[index].clinicService.subtotal.toString(),
                       )}',
                       style: ClinicTextStyle.h5Medium().copyWith(
-                        color: theme?.colorScheme.background == ClinicColor.darkBg
+                        color: theme?.colorScheme.surface == ClinicColor.darkBg
                             ? ClinicColor.warning
                             : ClinicColor.primary,
                       ),
@@ -101,6 +100,6 @@ List<Widget> medicalServiceOfPatient({
     if (medicalRecord.medicalRecordServices.isNotEmpty)
       Text('Total : ${rupiahFormatter(totalAmount.toString())}',
           style: ClinicTextStyle.h3Bold().copyWith(
-              color: theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.warning : ClinicColor.primary)),
+              color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.warning : ClinicColor.primary)),
   ];
 }

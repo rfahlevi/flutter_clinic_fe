@@ -21,7 +21,7 @@ Widget patientSearch({
 }) =>
     Container(
       padding: const EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 14),
-      decoration: BoxDecoration(color: Theme.of(context).colorScheme.background),
+      decoration: BoxDecoration(color: Theme.of(context).colorScheme.surface),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -105,7 +105,7 @@ Future<dynamic> patientsModalBottomSheet(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            decoration: BoxDecoration(color: Theme.of(context).colorScheme.background),
+            decoration: BoxDecoration(color: Theme.of(context).colorScheme.surface),
             margin: const EdgeInsets.only(bottom: 14),
             child: SearchForm(
               searchC: patientSearchC,

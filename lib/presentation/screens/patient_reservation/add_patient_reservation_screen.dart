@@ -216,7 +216,7 @@ class _AddPatientReservationScreenState extends State<AddPatientReservationScree
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              decoration: BoxDecoration(color: Theme.of(context).colorScheme.background),
+              decoration: BoxDecoration(color: Theme.of(context).colorScheme.surface),
               margin: const EdgeInsets.only(bottom: 14),
               child: SearchForm(
                 searchC: doctorSearchC,

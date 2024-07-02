@@ -34,7 +34,7 @@ PreferredSizeWidget clinicServicesAppbar({
         controller: tabController,
         labelColor: Theme.of(context).colorScheme.onBackground,
         indicator: BoxDecoration(
-          color: Theme.of(context).colorScheme.background,
+          color: Theme.of(context).colorScheme.surface,
           borderRadius: const BorderRadius.only(
             topRight: Radius.circular(12),
             topLeft: Radius.circular(12),

@@ -142,7 +142,7 @@ class _CheckoutTransactionScreenState extends State<CheckoutTransactionScreen> {
         ),
       ],
       child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Theme.of(context).colorScheme.surface,
         body: Padding(
             padding: const EdgeInsets.all(20),
             child: paymentMethod == 'QRIS'

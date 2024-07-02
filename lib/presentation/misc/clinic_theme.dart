@@ -6,9 +6,9 @@ class ClinicTheme {
   static lightTheme() => ThemeData(
         brightness: Brightness.light,
         colorScheme: ColorScheme.light(
-          background: ClinicColor.lightBg,
+          surface: ClinicColor.lightBg,
           primary: ClinicColor.primary,
-          onBackground: ClinicColor.black,
+          onSurface: ClinicColor.black,
         ),
         hintColor: ClinicColor.black,
         elevatedButtonTheme: ElevatedButtonThemeData(
@@ -27,9 +27,9 @@ class ClinicTheme {
   static darkTheme() => ThemeData(
         brightness: Brightness.dark,
         colorScheme: ColorScheme.dark(
-          background: ClinicColor.darkBg,
+          surface: ClinicColor.darkBg,
           primary: ClinicColor.primary,
-          onBackground: ClinicColor.white,
+          onSurface: ClinicColor.white,
         ),
         hintColor: ClinicColor.white,
         elevatedButtonTheme: ElevatedButtonThemeData(

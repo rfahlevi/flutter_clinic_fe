@@ -45,6 +45,7 @@ class AuthExternalDatasource implements AuthRepository {
         return Result.failed(result['message']);
       }
     } on DioException catch (e) {
+      log(e.error.toString());
       return Result.failed(e.response?.data['message'] ?? 'Internal Server Error');
     }
   }

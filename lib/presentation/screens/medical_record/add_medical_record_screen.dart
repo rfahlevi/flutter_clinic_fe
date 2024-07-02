@@ -96,7 +96,7 @@ class _AddMedicalRecordScreenState extends State<AddMedicalRecordScreen> {
         ),
       ],
       child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Theme.of(context).colorScheme.surface,
         appBar: addMedicalRecordAppbar(context),
         body: Padding(
           padding: const EdgeInsets.all(20),

@@ -90,7 +90,7 @@ class _MainScreenState extends State<MainScreen> {
         );
       },
       child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Theme.of(context).colorScheme.surface,
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(20),

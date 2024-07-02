@@ -36,7 +36,7 @@ List<Widget> medicalService({
         child: Text(
           'Medical Service',
           style: ClinicTextStyle.h4SemiBold().copyWith(
-            color: theme?.colorScheme.background == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black,
+            color: theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.white : ClinicColor.black,
           ),
         ),
       ),
@@ -68,7 +68,7 @@ List<Widget> medicalService({
                       Text(
                         'Total : ${rupiahFormatter('$totalAmount')}',
                         style: ClinicTextStyle.h3Bold().copyWith(
-                          color: theme?.colorScheme.background == ClinicColor.darkBg
+                          color: theme?.colorScheme.surface == ClinicColor.darkBg
                               ? ClinicColor.warning
                               : ClinicColor.primary,
                         ),
@@ -104,7 +104,7 @@ List<Widget> medicalService({
                     Text(
                       'Pilih Layanan',
                       style: ClinicTextStyle.h5SemiBold().copyWith(
-                          color: theme?.colorScheme.background == ClinicColor.darkBg
+                          color: theme?.colorScheme.surface == ClinicColor.darkBg
                               ? ClinicColor.warning
                               : ClinicColor.primary),
                     ),
@@ -112,9 +112,8 @@ List<Widget> medicalService({
                     Icon(
                       CupertinoIcons.arrow_right_square_fill,
                       size: 20,
-                      color: theme?.colorScheme.background == ClinicColor.darkBg
-                          ? ClinicColor.warning
-                          : ClinicColor.primary,
+                      color:
+                          theme?.colorScheme.surface == ClinicColor.darkBg ? ClinicColor.warning : ClinicColor.primary,
                     )
                   ],
                 ),

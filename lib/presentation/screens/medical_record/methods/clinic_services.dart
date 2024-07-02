@@ -41,7 +41,7 @@ Widget clinicServices({
                       BlocBuilder<GetClinicServicesBloc, GetClinicServicesState>(
                         builder: (context, state) {
                           return CheckboxListTile(
-                            activeColor: theme?.colorScheme.background == ClinicColor.darkBg
+                            activeColor: theme?.colorScheme.surface == ClinicColor.darkBg
                                 ? ClinicColor.warning
                                 : ClinicColor.primary,
                             title: Column(
@@ -50,7 +50,7 @@ Widget clinicServices({
                                 Text(
                                   'Kategori : ${clinicServices[index].category}',
                                   style: ClinicTextStyle.h5Regular().copyWith(
-                                      color: theme?.colorScheme.background == ClinicColor.darkBg
+                                      color: theme?.colorScheme.surface == ClinicColor.darkBg
                                           ? ClinicColor.white
                                           : ClinicColor.grey),
                                 ),

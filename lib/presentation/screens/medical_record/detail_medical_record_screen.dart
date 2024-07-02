@@ -49,7 +49,7 @@ class _DetailMedicalRecordScreenState extends State<DetailMedicalRecordScreen> {
     ThemeData? theme = context.watch<ToggleThemeBloc>().state.whenOrNull(themeResult: (themeResult) => themeResult);
 
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
         backgroundColor: ClinicColor.primary,
         foregroundColor: ClinicColor.white,
@@ -147,7 +147,7 @@ class _DetailMedicalRecordScreenState extends State<DetailMedicalRecordScreen> {
                     // ElevatedButton(
                     //   onPressed: () {},
                     //   style: ElevatedButton.styleFrom(
-                    //     backgroundColor: Theme.of(context).colorScheme.background,
+                    //     backgroundColor: Theme.of(context).colorScheme.surface,
                     //     side: BorderSide(color: ClinicColor.primary),
                     //   ),
                     //   child: Text(
